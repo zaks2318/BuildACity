@@ -25,7 +25,6 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
     private Button button;
     String username, check, name;
     int years, months, dayOfMonths;
-    private static final String TAG = MainActivity.class.getSimpleName();
 
     EditText nameInput;
     EditText emailInput;
@@ -58,7 +57,6 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
     protected void onRestart() {
         super.onRestart();
         clear();
-        Log.i(TAG, "onRestart()");
     }
 
     @Override
@@ -127,7 +125,6 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
 
     private boolean validateEmail(){
         String emailInputText = emailInput.getText().toString().trim();
-        Log.i(TAG, "eamil is: " + emailInputText);
         if(emailInputText.isEmpty()){
             emailInput.setError("Email can't be empty");
             return false;
@@ -142,7 +139,6 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
 
     public boolean validName(){
         name = nameInput.getEditableText().toString().trim();
-        Log.i(TAG, "name is: " + name);
         if (name.isEmpty()){
             nameInput.setError("enter your name pls");
             return false;
@@ -162,7 +158,6 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
 
     public boolean validUserName(){
         username = usernameInput.getEditableText().toString().trim();
-        Log.i(TAG, "username is: " + username);
         if (username.isEmpty()){
             usernameInput.setError("enter your user name pls");
             return false;
@@ -180,8 +175,6 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
          LocalDate birthday = LocalDate.of(years, months, dayOfMonths);
          check = birthday.toString();
          Period p = Period.between(birthday, today);
-         Log.i(TAG, "years, months, dayOfMonths: " + years + " ," + months + " ," + dayOfMonths);
-         Log.i(TAG, "Birthday is: " + birthday.toString());
          if (p.getYears() < 18) {
              edit.setError("you are under 18, so you can't sign up");
              return  false;
