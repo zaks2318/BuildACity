@@ -44,9 +44,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="157dp"
-        android:layout_marginTop="299dp"
+        android:layout_marginTop="470dp"
         android:layout_marginEnd="161dp"
-        android:layout_marginBottom="384dp"
+        android:layout_marginBottom="213dp"
         android:text="Begin" />
 
     <Button
@@ -57,10 +57,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="477dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginBottom="206dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="578dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="105dp"
         android:text="Collection" />
 
 </RelativeLayout>
