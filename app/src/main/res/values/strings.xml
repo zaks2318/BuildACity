@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AD340App</string>
+    <string name="app_name">BuildACity</string>
     <string name="Hello_frament">Hello World!</string>
     <string name="but">button</string>
     <string name="hello_settings_fragment">Hello settings fragment</string>
