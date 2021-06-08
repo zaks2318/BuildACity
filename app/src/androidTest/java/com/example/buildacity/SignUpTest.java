@@ -117,7 +117,7 @@ public class SignUpTest {
         onView(withText("OK")).perform(click());
         onView(withId(R.id.submitBut)).perform((click()));
 
-        onView((allOf(withId(R.id.editText), hasErrorText("you are under 18, so you can't sign up"))));
+        onView((allOf(withId(R.id.date_text), hasErrorText("you are under 18, so you can't sign up"))));
 
     }
 
