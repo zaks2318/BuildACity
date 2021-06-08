@@ -53,7 +53,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="131dp"
-        app:srcCompat="@drawable/wellplay" />
+        app:srcCompat="@drawable/well_play" />
 
     <Button
         android:id="@+id/button4"

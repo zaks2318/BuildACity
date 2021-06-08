@@ -103,7 +103,7 @@ public class CountdownFragment extends Fragment {
 
         if(minutes == 00 & seconds == 00){
             Toast.makeText(this.getContext(),"Good Job! Well Done!!", Toast.LENGTH_SHORT).show();
-            imageView.setImageResource(R.drawable.wellplay);
+            imageView.setImageResource(R.drawable.well_play);
             goback();
         }
     }
