@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textView = findViewById(R.id.textView);
+        textView = findViewById(R.id.textView4);
 
         StringBuilder msg = new StringBuilder("Select the button to start \n");
         Intent intent = getIntent();
@@ -40,5 +40,10 @@ public class MainActivity extends AppCompatActivity{
 
     public void finish(View view){
         finish();
+    }
+
+    public void gameActivity(View view) {
+        Intent intent2 = new Intent(this,gameActivity.class);
+        startActivity(intent2);
     }
 }

@@ -18,8 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".gameActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".process"></activity>
+        <activity android:name=".failView"></activity>
+        <activity android:name=".achievement"></activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

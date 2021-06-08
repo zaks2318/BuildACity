@@ -3,6 +3,7 @@ package com.example.buildacity;
 public class Constants {
     static final String KEY_NAME = "name";
     static final String KEY_USER_NAME = "username";
+    static final String KEY_TIMEGOAL = "time_goal";
     static final String KEY_EMAIL = "email";
     static final String KEY_DATEBIRTH = "date_of_birth";
     static final String KEY_BUTTON_TXT = "button_txt";

@@ -29,7 +29,7 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
     EditText nameInput;
     EditText emailInput;
     EditText usernameInput;
-    EditText edit;
+    TextView edit;
 
 
 
@@ -39,7 +39,6 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
         setContentView(R.layout.sign_up);
         dateText = findViewById(R.id.date_text);
         button = findViewById(R.id.submitBut);
-        edit = findViewById(R.id.editText);
 
         nameInput = (EditText) findViewById(R.id.nameInput);
         emailInput = (EditText) findViewById(R.id.emailInput);
@@ -176,13 +175,13 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
          check = birthday.toString();
          Period p = Period.between(birthday, today);
          if (p.getYears() < 18) {
-             edit.setError("you are under 18, so you can't sign up");
+             dateText.setError("you are under 18, so you can't sign up");
              return  false;
          } else if (check.isEmpty()) {
-             edit.setError("enter your brithday");
+             dateText.setError("enter your brithday");
              return  false;
          } else {
-             edit.setError(null);
+             dateText.setError(null);
              return true;
          }
      }
