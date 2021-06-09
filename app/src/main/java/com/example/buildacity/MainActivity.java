@@ -46,4 +46,9 @@ public class MainActivity extends AppCompatActivity{
         Intent intent2 = new Intent(this,gameActivity.class);
         startActivity(intent2);
     }
+
+    public void goAchevenment(View view){
+        Intent intent7 = new Intent(this,achievement.class);
+        startActivity(intent7);
+    }
 }
